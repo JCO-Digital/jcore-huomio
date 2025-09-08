@@ -1,0 +1,50 @@
+.wp-block-jcore-promo-button-group {
+  padding: 1rem 0;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 10px;
+  @media screen and (min-width: 782px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (min-width: 968px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .wp-block-jcore-promo-button a {
+    border-radius: 1rem;
+  }
+}
+
+@media screen and (min-width: 968px) {
+  .wp-block-jcore-promo-button-group.is-style-no-gap {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+    .wp-block-jcore-promo-button {
+      flex: 0 0 auto;
+      width: 33.33%;
+    }
+
+    .wp-block-jcore-promo-button a {
+      border-radius: 0;
+    }
+
+    .wp-block-jcore-promo-button:last-child a {
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+    }
+    .wp-block-jcore-promo-button:first-child a {
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+    }
+
+    .wp-block-jcore-promo-button:not(:last-child) a {
+      border-right: 1px solid #c0c5d3;
+    }
+  }
+}
