@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       JCORE Huomio
- * Description:       Plugin for Toasts.
+ * Description:       Toasts & Notifications made easy.
  * Version:         0.1.0
  * Requires at least: 6.7
  * Requires PHP:      8.2
@@ -20,19 +20,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+require_once __DIR__ . '/consts.php';
+require_once __DIR__ . '/includes/helpers.php';
+require_once __DIR__ . '/includes/rest-api.php';
 require_once __DIR__ . '/includes/timber.php';
-
-add_filter(
-	'timber/locations',
-	function ( $paths ) {
-		$paths['jcore-huomio'] = array(
-			__DIR__ . '/src',
-			__DIR__ . '/twig',
-		);
-
-		return $paths;
-	}
-);
+require_once __DIR__ . '/includes/admin.php';
+require_once __DIR__ . '/includes/frontend.php';
 
 
 /**
@@ -76,3 +69,13 @@ function block_init() {
 	}
 }
 add_action( 'init', '\Jcore\Huomio\block_init' );
+
+/**
+ * Load the translations.
+ *
+ * @return void
+ */
+function i18n() {
+	load_plugin_textdomain( 'jcore-huomio', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+}
+add_action( 'init', '\Jcore\Huomio\i18n' );

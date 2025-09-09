@@ -15,7 +15,8 @@
     "start": "wp-scripts start --blocks-manifest --experimental-modules",
     "watch": "concurrently -c green --names ' huomio' 'pnpm start'",
     "version": "node versionSync.mjs && git add -A",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "js:i18n": "pnpm dlx po2json -f jed1.x --domain jcore-huomio languages/jcore-huomio-fi.po languages/jcore-huomio-fi-jcore-huomio-admin.json"
   },
   "devDependencies": {
     "@wordpress/scripts": "^30.15.0",
@@ -23,8 +24,9 @@
   },
   "dependencies": {
     "@ariakit/react": "^0.4.17",
-    "@wordpress/icons": "^10.29.0",
-    "@jcodigital/jcore-media": "^1.0.0"
+    "@jcodigital/jcore-media": "^1.0.0",
+    "@wordpress/dataviews": "^8.0.0",
+    "@wordpress/icons": "^10.29.0"
   },
   "packageManager": "pnpm@10.11.0+sha512.6540583f41cc5f628eb3d9773ecee802f4f9ef9923cc45b69890fb47991d4b092964694ec3a4f738a420c918a333062c8b925d312f42e4f0c263eb603551f977"
 }

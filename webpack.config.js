@@ -51,6 +51,25 @@ function extendModuleConfig(config) {
   };
 }
 
+/**
+ * Extend the icon package config (currently extends with nothing)
+ *
+ * The Icon Package Config is for icon package-files (e.g. icon package files)
+ *
+ * @param {Object} config - The original config.
+ * @returns {Object} The extended config.
+ */
+function extendScriptsConfig(config) {
+  return {
+    ...config,
+    entry: {
+      ...config.entry,
+      "huomio-admin": "./src/admin/index.js",
+      "huomio-frontend": "./src/frontend/index.js",
+    },
+  };
+}
+
 module.exports = (() => {
   if (Array.isArray(wordpressConfig)) {
     const [scriptConfig, moduleConfig] = wordpressConfig;
@@ -63,7 +82,9 @@ module.exports = (() => {
       extendModuleConfig(moduleConfig)
     );
 
-    return [extendedScriptConfig, extendedModuleConfig];
+    const scriptsConfig = extendSharedConfig(extendScriptsConfig(scriptConfig));
+
+    return [extendedScriptConfig, extendedModuleConfig, scriptsConfig];
   } else {
     return extendSharedConfig(extendScriptConfig(wordpressConfig));
   }
