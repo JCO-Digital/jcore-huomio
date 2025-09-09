@@ -4,7 +4,7 @@ all: install build
 
 dev: install watch
 
-ci: install build
+ci: install build i18n
 
 ci-install: install
 
@@ -13,6 +13,9 @@ install:
 
 build:
 	pnpm build
+
+i18n:
+	pnpm run js:i18n
 
 watch:
 	pnpm run watch
