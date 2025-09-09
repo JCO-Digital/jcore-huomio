@@ -1,4 +1,13 @@
-# 0.2.0 (2025-09-09)
+## [0.2.1](https://github.com/JCO-Digital/jcore-huomio/compare/v0.2.0...v0.2.1) (2025-09-09)
+
+
+### Bug Fixes
+
+* **ci:** actually commit correctly ([a06b8d7](https://github.com/JCO-Digital/jcore-huomio/commit/a06b8d72069f833f0ee729d969bcbb3209b7a948))
+
+
+
+# [0.2.0](https://github.com/JCO-Digital/jcore-huomio/compare/e7cc896656ba54983d6dd0dbfdf908744ddd1174...v0.2.0) (2025-09-09)
 
 
 ### Features
