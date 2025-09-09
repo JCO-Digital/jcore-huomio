@@ -9,6 +9,7 @@ ci: install build
 ci-install: install
 
 install:
+	corepack enable
 	pnpm i
 
 build:
