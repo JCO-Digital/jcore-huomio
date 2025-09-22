@@ -1,3 +1,12 @@
+# [0.3.0](https://github.com/JCO-Digital/jcore-huomio/compare/v0.2.1...v0.3.0) (2025-09-22)
+
+
+### Features
+
+* Add data attribute to notification banner to avoid indexing. ✨ 🔍 ([cafb68c](https://github.com/JCO-Digital/jcore-huomio/commit/cafb68cf41cf632f6bb2e53126238e9bbbbdf976))
+
+
+
 ## [0.2.1](https://github.com/JCO-Digital/jcore-huomio/compare/v0.2.0...v0.2.1) (2025-09-09)
 
 
