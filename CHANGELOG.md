@@ -1,3 +1,17 @@
+# [0.4.0](https://github.com/JCO-Digital/jcore-huomio/compare/v0.3.0...v0.4.0) (2025-09-24)
+
+
+### Bug Fixes
+
+* cleanup translation loading and some documentation ([6a9122f](https://github.com/JCO-Digital/jcore-huomio/commit/6a9122f5097112d32649737a802edcb4c4081b24))
+
+
+### Features
+
+* Update admin menu function to include SVG icon for notification banner ([12262ce](https://github.com/JCO-Digital/jcore-huomio/commit/12262cecd08bf8e9baef46210eec301fb69a8fd3))
+
+
+
 # [0.3.0](https://github.com/JCO-Digital/jcore-huomio/compare/v0.2.1...v0.3.0) (2025-09-22)
 
 

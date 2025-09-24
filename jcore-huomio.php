@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       JCORE Huomio
  * Description:       Toasts & Notifications made easy.
- * Version: 0.3.0
+ * Version: 0.4.0
  * Requires at least: 6.7
  * Requires PHP:      8.2
  * Author:            J&Co Digital
