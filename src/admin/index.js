@@ -22,6 +22,14 @@ import {
 import { DataForm } from "@wordpress/dataviews/wp";
 import { __ } from "@wordpress/i18n";
 
+/**
+ * Editor component.
+ * This editor uses the experimental DataForm component.
+ *
+ * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-dataviews/
+ *
+ * @returns {JSX.Element}
+ */
 function Editor() {
   const [toast, setToast] = useState({
     message: "",

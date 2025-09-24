@@ -37,6 +37,14 @@ function admin_page() {
  * @return void
  */
 function add_admin_menu() {
-	add_menu_page( __( 'Notification banner', 'jcore-huomio' ), __( 'Notification banner', 'jcore-huomio' ), 'manage_options', 'jcore-huomio', '\Jcore\Huomio\admin_page', 'dashicons-info', 100 );
+	add_menu_page(
+		__( 'Notification banner', 'jcore-huomio' ),
+		__( 'Notification banner', 'jcore-huomio' ),
+		'manage_options',
+		'jcore-huomio',
+		'\Jcore\Huomio\admin_page',
+		'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1iZWxsLXJpbmctaWNvbiBsdWNpZGUtYmVsbC1yaW5nIj48cGF0aCBkPSJNMTAuMjY4IDIxYTIgMiAwIDAgMCAzLjQ2NCAwIi8+PHBhdGggZD0iTTIyIDhjMC0yLjMtLjgtNC4zLTItNiIvPjxwYXRoIGQ9Ik0zLjI2MiAxNS4zMjZBMSAxIDAgMCAwIDQgMTdoMTZhMSAxIDAgMCAwIC43NC0xLjY3M0MxOS40MSAxMy45NTYgMTggMTIuNDk5IDE4IDhBNiA2IDAgMCAwIDYgOGMwIDQuNDk5LTEuNDExIDUuOTU2LTIuNzM4IDcuMzI2Ii8+PHBhdGggZD0iTTQgMkMyLjggMy43IDIgNS43IDIgOCIvPjwvc3ZnPg==',
+		100
+	);
 }
 add_action( 'admin_menu', '\Jcore\Huomio\add_admin_menu' );

@@ -69,13 +69,3 @@ function block_init() {
 	}
 }
 add_action( 'init', '\Jcore\Huomio\block_init' );
-
-/**
- * Load the translations.
- *
- * @return void
- */
-function i18n() {
-	load_plugin_textdomain( 'jcore-huomio', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
-}
-add_action( 'init', '\Jcore\Huomio\i18n' );
